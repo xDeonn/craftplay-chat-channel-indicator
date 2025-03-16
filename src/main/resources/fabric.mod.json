@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "craftplay-chat-channel-indicator",
+	"version": "${version}",
+	"name": "Craftplay Chat Channel Indicator",
+	"description": "Displays your current plot coordinates above the chat box",
+	"authors": [
+		"xDeon_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/"
+	},
+	"license": "MIT",
+	"icon": "assets/craftplay-chat-channel-indicator/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.craftplaychatindicator.CraftplayChatChannelIndicator"
+		]
+	},
+	"mixins": [
+		"craftplay-chat-channel-indicator.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
